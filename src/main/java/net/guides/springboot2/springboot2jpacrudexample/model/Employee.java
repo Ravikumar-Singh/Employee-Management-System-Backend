@@ -11,7 +11,36 @@ public class Employee {
 	private String lastName;
 	private String emailId;
 	private String mobNo;
+	private String department;
+	private String jobTitle;
+	private String joiningDate;
 	
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public String getJoiningDate() {
+		return joiningDate;
+	}
+
+	public void setJoiningDate(String joiningDate) {
+		this.joiningDate = joiningDate;
+	}
+
 	public String getMobNo() {
 		return mobNo;
 	}
@@ -66,7 +95,9 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
-				+ "]";
+				+ ", mobNo=" + mobNo + ", department=" + department + ", jobTittle=" + jobTitle + ", joiningDate="
+				+ joiningDate + "]";
 	}
+
 	
 }
