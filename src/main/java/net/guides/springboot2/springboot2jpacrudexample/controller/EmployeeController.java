@@ -60,6 +60,7 @@ public class EmployeeController {
 		employee.setDepartment(employeeDetails.getDepartment());
 		employee.setJobTitle(employeeDetails.getJobTitle());
 		employee.setMobNo(employeeDetails.getMobNo());
+		employee.setActive(employeeDetails.isActive());
 		final Employee updatedEmployee = employeeRepository.save(employee);
 		return ResponseEntity.ok(updatedEmployee);
 	}

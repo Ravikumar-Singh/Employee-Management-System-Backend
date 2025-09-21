@@ -14,7 +14,16 @@ public class Employee {
 	private String department;
 	private String jobTitle;
 	private String joiningDate;
+	private boolean isActive;
 	
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+
 	public String getDepartment() {
 		return department;
 	}
